@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>Orders</h2>
+<br />
+
+<table class="table">
+
+
+    <tr>
+        <th>OrderID</th>
+        <th>CustomerID</th>
+        <th>EmployeeID</th>
+        
+    </tr>
+    @foreach (var Element in ViewBag.OList)
+    {
+        <tr>
+            <td> @Element.OrderID</td>
+            <td>@Element.CustomerID</td>
+            <td>@Element.EmployeeID</td>
+
+        </tr>
+    }
+
+
+</table>
